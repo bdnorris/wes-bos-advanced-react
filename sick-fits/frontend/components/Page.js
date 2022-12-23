@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 export default function Page({ children, cool }) {
   return (
@@ -11,9 +11,6 @@ export default function Page({ children, cool }) {
 }
 
 Page.propTypes = {
-  cool: PropTypes.string,
-  children: PropTypes.oneOf([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  cool: propTypes.string,
+  children: propTypes.any,
 };
