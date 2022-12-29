@@ -1,3 +1,4 @@
+// THIS FILE WOULDN"T BE NECESSARY IF YOU WERE USING THE appollo-boost PACKAGE, but SINCE WE NEED SOME SPECIAL CLOUDINARY STUFF, IT MAKES MORE SENSE TO DO IT THIS WAY
 import { ApolloClient, ApolloLink, InMemoryCache } from '@apollo/client';
 import { onError } from '@apollo/link-error';
 import { getDataFromTree } from '@apollo/client/react/ssr';

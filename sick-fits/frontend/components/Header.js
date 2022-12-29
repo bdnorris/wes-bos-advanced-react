@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Nav from './Nav';
 
 const Logo = styled.h1`
-  font-size: 4em;
+  font-size: 2.5rem;
   margin-left: 2em;
   position: relative;
   z-index: 2;
@@ -23,7 +23,7 @@ const HeaderStyles = styled.header`
   .bar {
     border-bottom: 10px solid var(--black, black);
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 400px 1fr;
     justify-content: space-between;
     align-items: center;
   }
@@ -41,10 +41,10 @@ export default function Header() {
         <Logo>
           <Link href="/">Sick Fits</Link>
         </Logo>
+        <Nav />
       </div>
       <div className="sub-bar">
         <p>Search</p>
-        <Nav />
       </div>
     </HeaderStyles>
   );
