@@ -5,6 +5,7 @@ export default function useForm(intial = {}) {
   const [inputs, setInputs] = useState(intial);
 
   function handleChange(e) {
+    console.log('handleChange', e);
     let { value, name, type } = e.target;
     if (type === 'number') {
       value = parseInt(value);
